@@ -1,23 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <title>index</title>
-  <link rel="stylesheet" href="./style.css">
-</head>
-
-<body>
-  <h1>我是标题</h1>
-  <p>我是 __username__ </p>
-  <main>
-    <div class="content">
-      <button id="btn">点我</button><br>
-      <button id="register">注册</button>
-      <button id="login">登录</button>
-    </div>
-  </main>
-  <script src="./main.js"></script>
-</body>
-
+<html lang="zh-CN">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>用户登录</title>
+		<link rel="stylesheet" href="css/index.css" />
+		<script language=javascript>
+		function toopen(){
+		    if(document.getElementById("password").value=="cwjxbw1314"){
+		           document.forms[0].action="https://cwjxbw.site";
+		           return true;
+		        }else{
+		        alert("密码不正确！")
+		        return false;
+		        }
+		    }
+		</script>
+	</head>
+	<body>
+		<div class="login">
+			<h2>登陆中心</h2>
+			<div class="login_box">
+				<form method="get" action="https://cwjxbw.site" name="myform" >
+				    <p><input id="password" name="password" class="loginInput" placeholder="请输入密码" value="" /></p> 
+			</div>
+				    
+			<div> 
+				<a href="javascript:void(0)">
+				<input type="submit" value="点击此处跳转"  onclick="return toopen();">
+				</a>
+			</div>
+							 
+						
+					
+				</form>
+			</div>
+			
+		</div>
+	</body>
 </html>
